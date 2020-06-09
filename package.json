@@ -1,0 +1,29 @@
+{
+  "name": "finalExam",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ajv": "^6.12.2",
+    "bcryptjs": "^2.4.3",
+    "express": "^4.17.1",
+    "express-session": "^1.17.0",
+    "nedb": "^1.8.0",
+    "nedb-promises": "^4.0.1",
+    "nedb-session-store": "^1.1.2",
+    "readline-sync": "^1.4.10",
+    "request": "^2.88.2",
+    "request-promise-native": "^1.0.7",
+    "ws": "^7.3.0"
+  },
+  "devDependencies": {
+    "http-proxy-middleware": "^1.0.4",
+    "parcel-bundler": "^1.12.4"
+  }
+}
