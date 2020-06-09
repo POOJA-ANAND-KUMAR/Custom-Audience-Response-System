@@ -1,0 +1,10 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"mocha.subdirectory": "..\\..\\..\\..\\..\\c:\\Greg\\Customers\\CSUEB\\CS651\\WebSockets\\ServerTesting\\test"
+	}
+}
