@@ -1,0 +1,42 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "http://grotto-networking.com/webclassroom.schema.json",
+    "title": "Messages",
+    "description": "WebSocket message format for the web classroom",
+    "type": "object",
+    "properties": {
+        "version": {
+            "description": "The version of our message format",
+            "type": "integer",
+            "enum": [1]
+        },
+        "type": {
+            "description": "The type of our classroom messages",
+            "type": "string",
+            "enum": ["chat", "status"]
+        },
+        "datetime": {
+            "description": "the date and time the message was sent, use Date.toISOString",
+            "type": "string",
+            "format": "date-time"
+        },
+        "to": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 30
+        },
+        "from": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 30
+        },
+        "content": {
+            "oneOf": [
+                { "type": "string"},
+                { "type": "object"}
+              ]
+        }
+    },
+    "required": ["version", "type", "datetime", "to", "from", "content"],
+    "additionalProperties": true
+}
