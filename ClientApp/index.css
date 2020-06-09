@@ -1,0 +1,94 @@
+body {
+    margin: 1em;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+        "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+        sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#Messages {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 1em;
+    grid-row-gap: 0.5em;
+    align-items: baseline;
+    justify-content: space-around;
+    grid-template-rows: 5em 80vh;
+}
+
+#Messages > h2 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    justify-self: center;
+}
+
+#Messages section {
+    border: solid deepskyblue;
+    border-radius: 0.5em;
+    align-self: stretch;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+    overflow:auto;
+}
+
+#SendMessage {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+
+}
+
+#SendMessage textarea {
+    min-width: 80%;
+    margin-bottom: 1em;
+}
+
+.LoginForm {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 1em;
+    grid-row-gap: 1em;
+    justify-content:center;
+    padding: 10em;
+    background-color:lightgray;
+    max-width: 30em;
+    border-radius: 5em;
+    margin-top: 1em;
+    margin-left: 15em;
+    margin-right: 15em;
+}
+
+.LoginForm label {
+	justify-self: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    width: 90vw;
+}
+
+nav a:hover {
+    background-color: deepskyblue;
+    cursor: pointer;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table td, th {
+    border: solid deepskyblue;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
