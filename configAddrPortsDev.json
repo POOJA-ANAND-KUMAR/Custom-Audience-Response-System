@@ -1,0 +1,8 @@
+{
+  "clientWsURL": "ws://192.168.1.216:1234/myws",
+  "wsPath": "/myws",
+  "wsServer": "localhost",
+  "wsPort": 8999,
+  "devHost": "192.168.1.216",
+  "devPort": 1234
+}
