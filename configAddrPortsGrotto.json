@@ -1,0 +1,5 @@
+{
+  "clientWsURL": "wss://classroom.grotto-networking.com/myws",
+  "wsServer": "localhost",
+  "wsPort": 21146
+}
